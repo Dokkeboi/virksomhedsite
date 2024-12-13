@@ -9,12 +9,17 @@ input,
 button {
   display: block;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 0;
 }
 
 form {
   display: grid;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #b993b7;
 }
 
 button {
@@ -32,6 +37,7 @@ button:hover {
 .name,
 .email {
   color: #b993b7;
+  padding: 5px;
 }
 
 .message {
@@ -41,12 +47,16 @@ button:hover {
 
 .background-form {
   background-color: #f3f3f3;
-  border-radius: 10px;
-  /* width: 50%; */
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  /* padding: 10px; */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
 /*************** Contact.html slut ****************/
