@@ -17,3 +17,21 @@
   font-weight: bold;
   font-style: normal;
 }
+
+.about_header {
+  background-image: url(../assets/placeholder.webp);
+}
+
+.about_header_undertext {
+  display: block;
+}
+
+.about_paragraph_image {
+  display: grid;
+}
+
+.about_paragraph_image img {
+  height: 50%;
+  width: auto;
+  border-radius: 20px;
+}
