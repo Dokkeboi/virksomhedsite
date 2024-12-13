@@ -1,0 +1,37 @@
+/*************** Contact.html ****************/
+
+.red-text {
+  color: #c42345;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 0;
+}
+
+#submit {
+  color: white;
+  background-color: #c42345;
+}
+
+.name,
+.email {
+  color: #b993b7;
+}
+
+.message {
+  padding: 30px;
+  color: #b993b7;
+}
+
+.background-form {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+/*************** Contact.html slut ****************/

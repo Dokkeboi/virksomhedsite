@@ -1,5 +1,8 @@
-label,
-input,
-button {
-  display: block;
+/*************** Contact.html ****************/
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+/*************** Contact.html slut ****************/
