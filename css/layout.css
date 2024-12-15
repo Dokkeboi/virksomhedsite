@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 900px;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  video {
+    max-width: 100%;
+  }
+
+  h2 {
+    place-self: center;
+  }
+
+  .grid1_1-1-1 .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    place-self: stretch;
+  }
+
+  .gallery2 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    place-self: stretch;
+  }
+
+  .gallery3 {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+    place-self: stretch;
+  }
+
+  .gallery4 {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    place-self: stretch;
+  }
+
+  .gallery5 {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+  }
+
+  .gallery6 {
+    grid-column: 4 / 6;
+    grid-row: 4;
+    width: 631px;
+    height: 445px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  img {
+    max-width: 100%;
+  }
+  video {
+    max-width: 100%;
+  }
+  h2 {
+    place-self: center;
+  }
+
+  body {
+    margin: auto;
+  }
+
+  .grid1_1-1-1 {
+    display: grid;
+    place-content: center;
+    padding: 20px;
+  }
+
+  .first_rows {
+    display: grid;
+    gap: 20px;
+  }
+
+  .second_rows {
+    margin: 0;
+    display: grid;
+    gap: 20px;
+  }
+
+  .third_rows {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery1 {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+  }
+
+  .gallery2 {
+    grid-column: 1;
+    grid-row: 2;
+    place-self: center;
+  }
+
+  .gallery6 {
+    grid-column: 1;
+    grid-row: 3;
+    place-self: center;
+  }
+
+  .gallery4 {
+    grid-column: 1;
+    grid-row: 4;
+    place-self: center;
+  }
+
+  .gallery5 {
+    grid-column: 1;
+    grid-row: 5;
+    place-self: center;
+  }
+
+  .gallery3 {
+    grid-column: 1;
+    grid-row: 6;
+    width: 631px;
+    height: 445px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    place-self: center;
+  }
+}
