@@ -35,3 +35,11 @@ video {
   font-weight: 400;
   font-style: normal;
 }
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #f28057;
+}
