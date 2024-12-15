@@ -1,0 +1,123 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Webfont styling */
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1200px) {
+  /* Desktop Header */
+
+  nav img {
+    width: 40px;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #9b35e4;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+  }
+
+  nav ul li:nth-of-type(4) {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+
+  .desktop_header_line_red {
+    background-color: #c42345;
+    height: 10px;
+  }
+  .desktop_header_line_orange {
+    background-color: #f28056;
+    height: 10px;
+  }
+  .desktop_header_line_yellow {
+    background-color: #ffb575;
+    height: 10px;
+  }
+
+  .desktop_logo {
+    width: 120px;
+    padding-top: 10px;
+    z-index: 3;
+  }
+
+  .header_social_media li:nth-of-type(4) {
+    padding-top: 25px;
+  }
+
+  header {
+    position: sticky;
+  }
+
+  .active_index {
+    background-image: url(../assets/banner.svg);
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    margin-left: -90px;
+    padding-right: 90px;
+    margin-right: -90px;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    translate: 0 -30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* Responsive Margins */
+
+  main {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
