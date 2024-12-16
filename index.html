@@ -14,14 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&family=Righteous&display=swap"
       rel="stylesheet"
     />
+    <script src="js/countdown.js" defer></script>
   </head>
 
   <body>
     <header>
-      <div class="desktop_header_line_red"></div>
-      <div class="desktop_header_line_orange"></div>
-      <div class="desktop_header_line_yellow"></div>
       <nav class="desktop_nav">
+        <div class="desktop_header_line_red"></div>
+        <div class="desktop_header_line_orange"></div>
+        <div class="desktop_header_line_yellow"></div>
         <ul>
           <li>
             <a href="about.html">ABOUT OOS</a>
@@ -41,29 +42,44 @@
             /></a>
           </li>
           <li>
-            <a href="https://out-of-season.myspreadshop.dk/">MERCH</a>
+            <a
+              href="https://out-of-season.myspreadshop.dk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MERCH</a
+            >
           </li>
           <div class="header_social_media">
             <ul>
               <li>
-                <a href="https://www.instagram.com/outofseasonfunk"
+                <a
+                  href="https://www.instagram.com/outofseasonfunk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img src="assets/instagram_color.svg" alt="Instagram Logo"
                 /></a>
               </li>
               <li>
-                <a href="https://www.facebook.com/outofseasonfunk/"
+                <a
+                  href="https://www.facebook.com/outofseasonfunk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img src="assets/facebook_color.svg" alt="Facebook Logo"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://youtube.com/@outofseasonfunk1983?si=g1xsAAn780q18zt3"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img src="assets/youtube_color.svg" alt="YouTube Logo"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://open.spotify.com/artist/3g19bzHHehyn3zAcyrFiLR?si=5jX6O6EmSwCsT4vRwTO6UQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><img src="assets/spotify_color.svg" alt="Spotify Logo"
                 /></a>
               </li>
@@ -72,7 +88,102 @@
           <img id="mute_button" src="assets/mute_icon.svg" alt="Mute Audio" />
         </ul>
       </nav>
-      <main></main>
     </header>
+
+    <main>
+      <div class="hero_section">
+        <img src="assets/hero.webp" alt="Hero Image" />
+        <img
+          src="assets/hero_text.svg"
+          alt="Avoid the funk, cuz it's gonna get you anyway"
+        />
+        <div>
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+
+          <dotlottie-player
+            src="https://lottie.host/b13414f5-2329-4c55-8cfb-01c44fbb1bde/NmaxrhHrN5.lottie"
+            background="transparent"
+            speed="0.7"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+
+        <section class="hero_flex">
+          <a href="about.html"><h5>OUR STORY</h5></a>
+          <a href="gallery.html"><h5>OUR MUSIC</h5></a>
+          <a href="about.html"><h5>THE BAND</h5></a>
+          <a href="contact.html"><h5>BOOK US</h5></a>
+        </section>
+      </div>
+
+      <section class="index_nextshow">
+        <h4>BARCELONA, HERE WE COME</h4>
+        <div id="#countdown" class="countdown">
+          <ul>
+            <li><span id="days">00</span>days</li>
+            <li><span id="hours">00</span>hours</li>
+            <li><span id="minutes">00</span>minutes</li>
+            <li><span id="seconds">00</span>seconds</li>
+          </ul>
+        </div>
+
+        <p>
+          Experience LIVE FUNK in Barcelona, Spain, on Saturday, February 22,
+          2025, at the famous Jamboree Jazz Club in the city centre. Contact the
+          band if you want a complete FUNK experience for your party or venue in
+          any country, anywhere!
+        </p>
+
+        <div class="index_nextshow_buttons">
+          <a href="contact.html">CONTACT US</a>
+          <a
+            href="https://jamboreejazz.com/esdeveniments/out-of-season/"
+            rel="noopener noreferrer"
+            >BUY TICKETS FOR OOS IN BARCELONA</a
+          >
+        </div>
+      </section>
+
+      <section class="grid_2_1_2">
+        <div>
+          <h2>OUT OF SEASON BEGAN IN 1990</h2>
+          <p>
+            Out Of Season is a Copenhagen-based funk band established in 1990.
+            The band performs a mix of its own compositions and interprets
+            covers. Out Of Season is still active and has played over 250
+            concerts, mainly in Copenhagen, with tours around Denmark and
+            Sweden. The music is inspired by the World’s most unique voices of
+            funk, soul and acid jazz – everything from Mr Thing and the
+            Professional Human Beings to Tower Of Power, Maceo Parker, Defunkt,
+            James Brown and more.
+          </p>
+        </div>
+
+        <img
+          src="assets/index_img_2.webp"
+          alt="Rasmus Wolff and Anders Blauenfeldt performing"
+        />
+
+        <div>
+          <h2>PLACEHOLDER TITLE</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            ducimus ab dolorum quibusdam repudiandae eaque nisi culpa dolore
+            ipsum! Molestiae, asperiores. Dolor, accusamus soluta. Sed quos
+            dolor, rerum laudantium possimus repellat doloremque dolorum,
+            aliquid accusantium eveniet maiores ducimus exercitationem? Autem
+            consequuntur at in ut accusantium voluptates quae nisi, quaerat et
+            eaque similique commodi quod voluptatibus possimus, quo, omnis
+            magnam reprehenderit quia accusamus!
+          </p>
+        </div>
+
+        <img src="assets/index_img_1.webp" alt="Ripper on vocals" />
+      </section>
+    </main>
   </body>
 </html>
