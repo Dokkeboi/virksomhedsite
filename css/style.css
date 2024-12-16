@@ -111,7 +111,7 @@ img {
     translate: 0 -30px;
   }
 }
-
+/* mobile header */
 @media (max-width: 900px) {
   nav img {
     width: 27px;
