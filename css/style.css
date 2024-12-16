@@ -112,6 +112,65 @@ img {
   }
 }
 
+@media (max-width: 900px) {
+  nav img {
+    width: 27px;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #9b35e4;
+  }
+
+  nav ul li {
+    position: sticky;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
+
+  nav ul li:nth-of-type(4) {
+    position: sticky;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
+
+  .mobile_header_line_red {
+    background-color: #c42345;
+    height: 37px;
+  }
+  .mobile_header_line_orange {
+    background-color: #f28056;
+    height: 10px;
+  }
+  .mobile_header_line_yellow {
+    background-color: #ffb575;
+    height: 10px;
+  }
+
+  .mobile_logo {
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .header_social_media li:nth-of-type(4) {
+    padding-top: 5px;
+  }
+
+  header {
+    position: relative;
+  }
+}
+
 @media (min-width: 1400px) {
   /* Responsive Margins */
 
