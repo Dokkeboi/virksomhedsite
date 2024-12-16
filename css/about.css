@@ -36,8 +36,15 @@ img{
   font-style: normal;
 }
 
+/* MOBILE */
+@media only screen and (min-width: 375px){
+
 main{
   margin: 20px;
+}
+
+#ABOUT{
+  display: none;
 }
 
 p{
@@ -125,16 +132,276 @@ font-weight: 700;
 line-height: normal;
 }
 
-.about_biography3{
+.about_content3{
   background-color: #E8E8E8;
   border-radius: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 30px;i
 }
 
-.about_biography3 p, h6{
+.about_content3 p, h6{
   margin-left: 20px;
 }
 
-.about_biography3 img{
+.about_content3 img{
   border-radius: 20px 20px 0px 0px;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+/* GALLERY MOBILE SLIDER */
+/* Overall styling */
+#slider {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+  position: relative; /* Needed for positioning of arrows */
+}
+
+#slider input[type="radio"] {
+  display: none;
+}
+
+#slider label {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Slides container */
+#slides {
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Inner container of slides */
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 700%; /* For 7 slides */
+  line-height: 0;
+  height: 300px;
+}
+
+/* Each slide takes up 14.2857% of the container width */
+#slides .slide {
+  width: 14.2857%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+/* Individual slide colors */
+#slides .slide_1 { background: #00171f; }
+#slides .slide_2 { background: #003459; }
+#slides .slide_3 { background: #007ea7; }
+#slides .slide_4 { background: #00a8e8; }
+#slides .slide_5 { background: #17bebb; }
+#slides .slide_6 { background: #2e282a; }
+#slides .slide_7 { background: #a1c349; }
+
+.slide-content{
+  display: block;
+  width: 100%;
+  object-fit: fill;
+}
+
+/* Margin for each slide (positioning the inner container) */
+#slide1:checked ~ #slides .inner { margin-left: 0; }
+#slide2:checked ~ #slides .inner { margin-left: -100%; }
+#slide3:checked ~ #slides .inner { margin-left: -200%; }
+#slide4:checked ~ #slides .inner { margin-left: -300%; }
+#slide5:checked ~ #slides .inner { margin-left: -400%; }
+#slide6:checked ~ #slides .inner { margin-left: -500%; }
+#slide7:checked ~ #slides .inner { margin-left: -600%; }
+
+/* Navigation Controls (Arrows) */
+#controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+#controls label {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+}
+
+#controls label:hover {
+  opacity: 1;
+}
+
+/* Right Arrow (Next Slide) */
+#slide1:checked ~ #controls label:nth-child(2) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide2:checked ~ #controls label:nth-child(3) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide3:checked ~ #controls label:nth-child(4) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide4:checked ~ #controls label:nth-child(5) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide5:checked ~ #controls label:nth-child(6) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide6:checked ~ #controls label:nth-child(7) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+#slide7:checked ~ #controls label:nth-child(8) { right: 15px; background: url(linkedin_icon.webp) no-repeat center; background-size: contain; }
+
+}
+
+
+/* TABLET */
+@media only screen and (min-width: 1000px) {
+
+  p{
+    color: #3D093A;
+  text-align: justify;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 170% */
+  }
+
+  #ABOUT_OOS{
+    display: none;
+  }
+
+  #ABOUT{
+    display: block;
+  }
+
+  .about_header{
+  height: 320px;
+  }
+
+  h1{
+    font-size: 65px;
+  }
+
+  .about_header h2{
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .about_header_undertext h2{
+    font-size: 35px;
+  }
+
+
+  .about_paragraph_image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    margin: auto;
+    gap: 50px;
+  }
+
+
+  .about_biography2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .about_content3{
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .about_content3 p, h6{
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  .about_content3 img{
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1920px) {
+
+  p{
+    color: #3D093A;
+  text-align: justify;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 170% */
+  }
+
+  #ABOUT_OOS{
+    display: none;
+  }
+
+  #ABOUT{
+    display: block;
+  }
+
+  .about_header{
+  height: 320px;
+  }
+
+  h1{
+    font-size: 65px;
+  }
+
+  .about_header h2{
+    font-size: 40px;
+    margin-top: 150px;
+  }
+
+  .about_header_undertext h2{
+    font-size: 35px;
+  }
+
+
+  .about_paragraph_image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    margin: auto;
+    gap: 50px;
+  }
+
+
+  .about_biography2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .about_content3{
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .about_content3 p, h6{
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  .about_content3 img{
+    border-radius: 20px 20px 0px 0px;
+  }
 }
