@@ -1,6 +1,22 @@
 @media (min-width: 1200px) {
   /* Desktop Header */
 
+  .mobile_nav {
+    display: none;
+  }
+
+  .mobile_header_line_orange {
+    display: none;
+  }
+
+  .mobile_header_line_yellow {
+    display: none;
+  }
+
+  .mobile_header_logo {
+    display: none;
+  }
+
   .desktop_nav ul {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 3fr 1fr;
@@ -48,6 +64,12 @@
     grid-column: 5;
     grid-row: 1;
   }
-  .mobile_logo {
+  .mobile_menu_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .mobile_menu_nav .mobile_menu {
+    grid-column: 5;
+    margin: 30px;
   }
 }
