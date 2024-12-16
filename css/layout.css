@@ -34,7 +34,9 @@
     margin-left: auto;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  /* mobile header */
+
   .desktop_nav ul {
     display: none;
   }
