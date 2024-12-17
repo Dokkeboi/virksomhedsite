@@ -160,7 +160,13 @@
   grid-column: 1;
   grid-row: 1;
   place-self: center;
+  overflow: hidden;
+  display: block;
+  object-fit: cover;
+  width: 631px;
+  height: 535px;
 }
+
 .gallery8 {
   grid-column: 1;
   grid-row: 2;
@@ -241,8 +247,8 @@
     overflow: hidden;
     display: block;
     object-fit: cover;
-    width: 631px;
-    height: 535px;
+    width: 700px;
+    height: 600px;
   }
 
   .grid2_1-1-1 .gallery {
@@ -256,7 +262,13 @@
     grid-column: 1 / 6;
     grid-row: 1;
     place-self: stretch;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    width: 800px;
+    height: 600px;
   }
+
   .gallery8 {
     grid-column: 6 / 12;
     grid-row: 1;
