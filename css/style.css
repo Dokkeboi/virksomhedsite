@@ -308,6 +308,37 @@ footer p {
   ul li {
     list-style: none;
   }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .mobile_links a {
+    display: block;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    border-bottom: #bebebe 1px solid;
+    text-align: center;
+    padding: 3px;
+  }
+
+  .mobile_links a:hover {
+    color: #9b35e4;
+    background-color: #f0f0f0;
+  }
+
+  .mobile_active {
+    background-color: #c42345;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.mobile_links {
+  display: none;
 }
 
 .mobile_logo {
@@ -316,11 +347,10 @@ footer p {
 }
 
 .hamburger {
-  z-index: 100;
   cursor: pointer;
   margin-left: auto;
-  padding: 10px;
-  padding-top: 25px;
+  scale: 1.5;
+  padding: 25px 25px 10px 10px;
 }
 
 .mobile_links {
@@ -330,7 +360,9 @@ footer p {
 }
 
 .burger_grid {
+  z-index: 100;
   border-bottom: #9b35e4 1px solid;
+  background-color: #ffffff;
 }
 
 @media (min-width: 800px) {
