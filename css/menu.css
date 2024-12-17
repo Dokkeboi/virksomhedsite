@@ -1,0 +1,114 @@
+/* burger menu */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.mobile_menu_nav .mobile_menu .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_menu_nav .mobile_menu .menu li {
+  margin-right: 20px;
+}
+
+.mobile_menu_nav .mobile_menu .menu li:last-child {
+  margin-right: 20px;
+}
+
+.mobile_menu_nav .mobile_menu .menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+  place-self: right;
+}
+
+.mobile_menu_nav .mobile_menu .menu a:hover {
+  color: #19191a;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .mobile_menu_nav .mobile_menu .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  .mobile_menu_nav nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 154px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .mobile_menu_nav nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  .mobile_menu_nav nav.active .menu a {
+    font-size: 24px;
+  }
+}
