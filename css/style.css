@@ -441,8 +441,13 @@ footer p {
   .header_social_media li:hover {
     filter: grayscale(100%) brightness(0.6) contrast(500%);
   }
+
   .header_social_media li:nth-of-type(4):hover {
     filter: grayscale(100%) brightness(0) contrast(500%);
+  }
+
+  .active_desktop {
+    color: #f28056;
   }
 }
 
@@ -458,7 +463,7 @@ footer p {
     width: 40px;
   }
 
-  .desktop_logo {
+  .active_index img {
     filter: brightness(10000);
   }
 
