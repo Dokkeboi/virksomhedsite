@@ -379,3 +379,18 @@ video {
     margin: 30px;
   }
 }
+/*************** Contact.html ****************/
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*************** Contact.html slut ****************/
