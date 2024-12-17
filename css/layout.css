@@ -1,6 +1,7 @@
 @media (min-width: 1200px) {
   /* Desktop Header */
 
+  /* display: none på mobile header */
   .mobile_nav {
     display: none;
   }
@@ -37,6 +38,7 @@
 @media (max-width: 800px) {
   /* mobile header */
 
+  /* display: none på desktop header */
   .desktop_nav ul {
     display: none;
   }
