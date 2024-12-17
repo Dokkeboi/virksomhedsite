@@ -285,7 +285,59 @@ footer p {
   width: 100%;
 }
 
+/* MOBILE STYLE */
+
+#mobile_header_line_orange {
+  background-color: #f28056;
+  height: 10px;
+}
+#mobile_header_line_yellow {
+  background-color: #ffb575;
+  height: 10px;
+}
+
+.grid_1_2_1 {
+  background-color: #c42345;
+}
+
+.grid_1_2_1 img {
+  width: 28px;
+}
+
+.mobile_nav {
+  ul li {
+    list-style: none;
+  }
+}
+
+.mobile_logo {
+  width: 100px;
+  padding: 10px;
+}
+
+.hamburger {
+  z-index: 100;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.mobile_links {
+  a {
+    text-decoration: none;
+  }
+}
+
+.burger_grid {
+  border-bottom: #9b35e4 1px solid;
+}
+
 @media (min-width: 800px) {
+  .mobile_nav {
+    display: none;
+  }
+
   h2 {
     margin-top: 0;
     font-size: 34px;
