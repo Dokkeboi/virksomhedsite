@@ -116,16 +116,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
-}
 
-@media (min-width: 1200px) {
-  /* INDEX.HTML STYLE */
-
-  .hero_section {
-    margin-top: 7px;
-  }
-
-  /* Desktop Header */
   .desktop_nav {
     display: block;
   }
@@ -145,4 +136,14 @@
   .mute_button {
     padding-top: 25px;
   }
+}
+
+@media (min-width: 1200px) {
+  /* INDEX.HTML STYLE */
+
+  .hero_section {
+    margin-top: 7px;
+  }
+
+  /* Desktop Header */
 }

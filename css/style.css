@@ -385,10 +385,86 @@ footer p {
     margin-right: auto;
     font-size: 40px;
   }
+
+  nav img {
+    width: 32px;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #9b35e4;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+  }
+
+  nav ul li:nth-of-type(4) {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+
+  .desktop_header_line_red {
+    background-color: #c42345;
+    height: 10px;
+  }
+  .desktop_header_line_orange {
+    background-color: #f28056;
+    height: 10px;
+  }
+  .desktop_header_line_yellow {
+    background-color: #ffb575;
+    height: 10px;
+  }
+
+  .desktop_logo {
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+  }
+
+  .header_social_media li:nth-of-type(4) {
+    padding-top: 25px;
+  }
+
+  .header_social_media li:hover {
+    filter: grayscale(100%) brightness(0.6) contrast(500%);
+  }
+  .header_social_media li:nth-of-type(4):hover {
+    filter: grayscale(100%) brightness(0) contrast(500%);
+  }
 }
 
 @media (min-width: 1200px) {
   /* INDEX.HTML STYLE */
+
+  .desktop_logo {
+    width: 120px;
+    padding-bottom: 0px;
+  }
+
+  nav img {
+    width: 40px;
+  }
+
+  .desktop_logo {
+    filter: brightness(10000);
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
 
   .index_nextshow p {
     font-size: 24px;
@@ -441,65 +517,6 @@ footer p {
   }
 
   /* Desktop Header */
-
-  nav img {
-    width: 40px;
-  }
-
-  nav ul li a {
-    color: black;
-    font-size: 24px;
-    font-family: "Oswald", sans-serif;
-    text-decoration: none;
-  }
-  nav ul li a:hover {
-    color: #9b35e4;
-  }
-
-  nav ul li {
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-  }
-
-  nav ul li:nth-of-type(4) {
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-  }
-
-  .desktop_header_line_red {
-    background-color: #c42345;
-    height: 10px;
-  }
-  .desktop_header_line_orange {
-    background-color: #f28056;
-    height: 10px;
-  }
-  .desktop_header_line_yellow {
-    background-color: #ffb575;
-    height: 10px;
-  }
-
-  .desktop_logo {
-    width: 120px;
-    padding-top: 10px;
-    z-index: 3;
-  }
-
-  .header_social_media li:nth-of-type(4) {
-    padding-top: 25px;
-  }
-
-  .header_social_media li:hover {
-    filter: grayscale(100%) brightness(0.6) contrast(500%);
-  }
-  .header_social_media li:nth-of-type(4):hover {
-    filter: grayscale(100%) brightness(0) contrast(500%);
-  }
-
   .active_index {
     background-image: url(../assets/banner.svg);
     background-repeat: no-repeat;
