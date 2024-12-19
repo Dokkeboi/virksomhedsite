@@ -13,7 +13,7 @@ html,
 /* MOBILE */
 @media only screen {
   main {
-    margin: 20px;
+    margin: auto;
   }
 
   #ABOUT {
@@ -58,7 +58,7 @@ html,
 
   .about_header_undertext {
     text-align: center;
-    margin-top: -20px;
+    margin-top: -5px;
     margin-bottom: 10px;
   }
 
@@ -394,7 +394,7 @@ html,
 
   .about_header h2 {
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .about_header_undertext h2 {
