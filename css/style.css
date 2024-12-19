@@ -375,37 +375,35 @@ footer p {
   width: 28px;
 }
 
-.mobile_nav {
-  ul li {
-    list-style: none;
-  }
+.mobile_nav ul li {
+  list-style: none;
+}
 
-  .closeIcon {
-    display: none;
-  }
+.closeIcon {
+  display: none;
+}
 
-  .mobile_links a {
-    display: block;
-    color: black;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    border-bottom: #bebebe 1px solid;
-    text-align: center;
-    padding: 3px;
-  }
+.mobile_links a {
+  display: block;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  border-bottom: #bebebe 1px solid;
+  text-align: center;
+  padding: 3px;
+}
 
-  .mobile_links a:hover {
-    color: #9b35e4;
-    background-color: #f0f0f0;
-  }
+.mobile_links a:hover {
+  color: #9b35e4;
+  background-color: #f0f0f0;
+}
 
-  .mobile_active {
-    background-color: #c42345;
+.mobile_active {
+  background-color: #c42345;
+}
 
-    a {
-      color: white;
-    }
-  }
+.mobile_active a {
+  color: white;
 }
 
 .mobile_links {
@@ -424,10 +422,8 @@ footer p {
   padding: 25px 25px 10px 10px;
 }
 
-.mobile_links {
-  a {
-    text-decoration: none;
-  }
+.mobile_links a {
+  text-decoration: none;
 }
 
 .burger_grid {
@@ -436,14 +432,12 @@ footer p {
   background-color: #ffffff;
 }
 
-.gallery_main {
-  img {
-    border-radius: 30px;
-  }
+.gallery_main img {
+  border-radius: 30px;
+}
 
-  video {
-    border-radius: 30px;
-  }
+.gallery_main video {
+  border-radius: 30px;
 }
 
 .gallery_title {
